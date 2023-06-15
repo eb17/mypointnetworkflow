@@ -1,3 +1,6 @@
+"""
+Purpose: Investigation of PointNet and other CNN according to dataset specific influences
+"""
 import math
 import os
 
