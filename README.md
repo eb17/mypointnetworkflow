@@ -22,14 +22,11 @@ If you find our work useful in your research, please consider citing:
    
 ### Installation
 
-Install <a href="https://www.tensorflow.org/get_started/os_setup" target="_blank">TensorFlow</a>. You may also need to install h5py. The code has been tested with Python 2.7, TensorFlow 1.0.1, CUDA 8.0 and cuDNN 5.1 on Ubuntu 14.04. 
+Install <a href="https://www.tensorflow.org/get_started/os_setup" target="_blank">TensorFlow</a>. You also need to install matplotlib, pandas, numpy, open3d and sklearn, pyntcloud. The code has been tested with Python 3.8.3, TensorFlow 2.3.0, CUDA 11.0 and cuDNN V10.1.243 on Windows10. 
 
-If you are using PyTorch, you can find a third-party pytorch implementation <a href="https://github.com/fxia22/pointnet.pytorch" target="_blank">here</a>.
-
-To install h5py for Python:
+Use your favourite terminal and install packages for Python:
 ```bash
-sudo apt-get install libhdf5-dev
-sudo pip install h5py
+ pip3 install *package*
 ```
 
 ### Usage
