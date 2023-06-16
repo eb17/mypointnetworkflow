@@ -1,13 +1,11 @@
 # mypointnetworkflow
-In this repository the developed code will be published after the PhD thesis is published.
-You find a beta version here
+*In this repository the developed code will be published after the PhD thesis is published.
+You find a beta version here*
 
-## PointNet: *Deep Learning on Point Sets for 3D Classification and Segmentation*
-Created by <a href="http://charlesrqi.com" target="_blank">Charles R. Qi</a>, <a href="http://ai.stanford.edu/~haosu/" target="_blank">Hao Su</a>, <a href="http://cs.stanford.edu/~kaichun/" target="_blank">Kaichun Mo</a>, <a href="http://geometry.stanford.edu/member/guibas/" target="_blank">Leonidas J. Guibas</a> from Stanford University.
-
+Created by Eike Barnefske from HafenCity University Hamburg.
 
 ### Introduction
-This collection of scripts is used to examine dataset-specific properties and hyperparameters of artificial neural networks. The data preprocessing is optimized for the deep learning method PointNet. PointNet in the variant, of the example of xxx and xxx (link) is, the basic network. This was adapted in a few places for our purposes. The adapted version of PointNet is part of this repository as a script. 
+This collection of scripts is used to examine dataset-specific properties and hyperparameters of artificial neural networks. The data preprocessing is optimized for the deep learning method PointNet. PointNet in the variant, of the example of xxx and xxx (<a href="http://charlesrqi.com" target="_blank">Keras</a>) is, the basic network. This was adapted in a few places for our purposes. The adapted version of PointNet is part of this repository as a script. 
 
 The weighted loss function has been developed on the basis of the post of B. and is a script in this repository.  
 
