@@ -7,12 +7,11 @@ Created by <a href="http://charlesrqi.com" target="_blank">Charles R. Qi</a>, <a
 
 
 ### Introduction
-This work is based on our, which is going to appear in CVPR 2017. We proposed a novel deep net architecture for point clouds (as unordered point sets). You can also check our [project webpage](http://stanford.edu/~rqi/pointnet) for a deeper introduction.
+This collection of scripts is used to examine dataset-specific properties and hyperparameters of artificial neural networks. The data preprocessing is optimized for the deep learning method PointNet. PointNet in the variant, of the example of xxx and xxx (link) is, the basic network. This was adapted in a few places for our purposes. The adapted version of PointNet is part of this repository as a script. 
 
-Point cloud is an important type of geometric data structure. Due to its irregular format, most researchers transform such data to regular 3D voxel grids or collections of images. This, however, renders data unnecessarily voluminous and causes issues. In this paper, we design a novel type of neural network that directly consumes point clouds, which well respects the permutation invariance of points in the input.  Our network, named PointNet, provides a unified architecture for applications ranging from object classification, part segmentation, to scene semantic parsing. Though simple, PointNet is highly efficient and effective.
+The weighted loss function has been developed on the basis of the post of B. and is a script in this repository.  
 
-In this repository, we release code and data for training a PointNet classification network on point clouds sampled from 3D shapes, as well as for training a part segmentation network on ShapeNet Part dataset.
-
+The main script is xxx. In this script the hyperparameters and investigation parameters are defined. Further, scripts for data enhancement can be found in the folder xxx. 
 ### Citation
 If you find our work useful in your research, please consider citing:
 
@@ -20,7 +19,7 @@ If you find our work useful in your research, please consider citing:
 	  title={xxxSegmentation},
 	  author={Barnefske,Eike},
 	  journal={xx},
-	  year={2016}
+	  year={2023}
 	}
    
 ### Installation
