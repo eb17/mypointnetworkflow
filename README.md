@@ -1,15 +1,15 @@
 # mypointnetworkflow
-*In this repository the developed code will be published after the PhD thesis is published.
-You find a beta version here*
-
-Created by Eike Barnefske from HafenCity University Hamburg.
 
 ### Introduction
 This source code was created as part of my dissertation at HafenCity University Hamburg. The collection of scripts is 
 used to examine dataset-specific properties and hyperparameters of artificial neural networks. The data preprocessing 
 is optimized for the deep learning method PointNet. 
 
-PointNet in the variant, of the example of xxx and xxx (<a href="http://charlesrqi.com" target="_blank">Keras</a>) is,
+PointNets from  original source code, was one of the fist point-based DeepLearning antilogarithm. It is adjusted many times. 
+I use the keras-base sample code from <a href="https://dgriffiths3.github.io" target="_blank">David Griffiths</a> as base for
+my experiments.
+
+so in the variant, of the example of xxx and xxx (<a href="https://github.com/charlesq34/pointnet" target="_blank">Charles R. Qi</a>) is,
 the basic network. This was adapted in a few places for our purposes. The adapted version of PointNet is part of this
 repository as a script. 
 
