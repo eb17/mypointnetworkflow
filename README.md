@@ -32,19 +32,6 @@ The easy to use wcce function is defined in
 
     weighted_categorical_crossentropy.py
 
-
-### Citation
-If you find our work useful in your research, please consider citing:
-
-	@PhdThesis{Barnefske2023,
-	  title={Automated segmentation and classification with artificial neural networks of objects in 3D point clouds},
-	  author={Barnefske,Eike},
-	  journal={xx},
-      date        = {2023},
-      institution = {HafenCity University Hamburg}, 
-      type        = {phdthesis},
-    }
-   
 ### Installation
 
 Install <a href="https://www.tensorflow.org/get_started/os_setup" target="_blank">TensorFlow</a>.
@@ -58,3 +45,15 @@ Use your favourite terminal and install packages for Python:
 
 ### License
 The code is released under MIT License (see LICENSE file for details), unless other restrictions prohibit it.
+
+### Citation
+If you find our work useful in your research, please consider citing:
+
+	@PhdThesis{Barnefske2023,
+	  title={Automated segmentation and classification with artificial neural networks of objects in 3D point clouds},
+	  author={Barnefske,Eike},
+	  journal={xx},
+      date        = {2023},
+      institution = {HafenCity University Hamburg}, 
+      type        = {phdthesis},
+    }
