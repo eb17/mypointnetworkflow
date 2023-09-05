@@ -5,17 +5,34 @@ This source code was created as part of my dissertation at HafenCity University 
 used to examine dataset-specific properties and hyperparameters of artificial neural networks. The data preprocessing 
 is optimized for the deep learning method PointNet. 
 
-PointNets from  original source code, was one of the fist point-based DeepLearning antilogarithm. It is adjusted many times. 
-I use the keras-base sample code from <a href="https://dgriffiths3.github.io" target="_blank">David Griffiths</a> as base for
-my experiments.
-
-so in the variant, of the example of xxx and xxx (<a href="https://github.com/charlesq34/pointnet" target="_blank">Charles R. Qi</a>) is,
-the basic network. This was adapted in a few places for our purposes. The adapted version of PointNet is part of this
-repository as a script. 
+PointNets from <a href="https://github.com/charlesq34/pointnet" target="_blank">Charles R. Qi</a> original source code,
+was one of the fist point-based DeepLearning antilogarithm. It is adjusted many times. I use the keras-base sample code 
+from <a href="https://dgriffiths3.github.io" target="_blank">David Griffiths</a> as base for my experiments.
 
 The weighted loss function has been developed on the basis of the post of <a href="https://stackoverflow.com/questions/59520807/multi-class-weighted-loss-for-semantic-image-segmentation-in-keras-tensorflow" target="_blank">Mendi Barel</a> and is a script in this repository.  
 
-The main script is xxx. In this script the hyperparameters and investigation parameters are defined. Further, scripts for data enhancement can be found in the folder xxx. 
+All lines taken from other source code are marked in the respective scripts. Links to posts and source code, which were idea-generating or from which the source code was taken, are marked in my source code. 
+The source code has been created and documented to the best of my knowledge. A guarantee and liability for the source code stallige damage is not taken over by the author. The user acts at his own risk. The code was created without the use of artificial intelligence. 
+
+The main script is 
+
+    training_run.py. 
+
+In this script the hyperparameters and investigation parameters are defined.
+
+For creating test and training data use the scrips in the folder:
+    
+    Data preparation
+
+The network architecture can be found in script:
+    
+    pointnet_keras.py
+
+The easy to use wcce function is defined in 
+
+    weighted_categorical_crossentropy.py
+
+
 ### Citation
 If you find our work useful in your research, please consider citing:
 
@@ -37,16 +54,5 @@ Use your favourite terminal and install packages for Python:
  pip3 install *package*
 ```
 
-### Usage
-To train a model to classify point clouds sampled from 3D shapes:
-
-    python train.py
-
-Log files and network parameters will be saved to `log` folder in default. Point clouds of <a href="http://modelnet.cs.princeton.edu/" target="_blank">ModelNet40</a> models in HDF5 files will be automatically downloaded (416MB) to the data folder. Each point cloud contains 2048 points uniformly sampled from a shape surface. Each cloud is zero-mean and normalized into an unit sphere. There are also text files in `data/modelnet40_ply_hdf5_2048` specifying the ids of shapes in h5 files.
-
-To see HELP for the training script:
-
-    python train.py -h
-
 ### License
-Our code is released under MIT License (see LICENSE file for details).
+The code is released under MIT License (see LICENSE file for details), unless other restrictions prohibit it.
