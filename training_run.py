@@ -573,7 +573,7 @@ if __name__ == '__main__':
     BATCH_SIZE = 16  # Batch size
     EPOCHS = 1000  # Number of epochs
     INITIAL_LR = 1e-3  # Learning rate at the beginning
-    NUM_FEATURE = 12  # Number of features:  lokal x, y, z, point normals und global coordinates
+    NUM_FEATURE = 12  # Number of features:  local x, y, z, point normals und global coordinates
     SCALE = 1  # Edge length of the voxels
     SCALE_H = 6  # Vertical edge length of the voxels
 
