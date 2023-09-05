@@ -5,16 +5,22 @@ You find a beta version here*
 Created by Eike Barnefske from HafenCity University Hamburg.
 
 ### Introduction
-This collection of scripts is used to examine dataset-specific properties and hyperparameters of artificial neural networks. The data preprocessing is optimized for the deep learning method PointNet. PointNet in the variant, of the example of xxx and xxx (<a href="http://charlesrqi.com" target="_blank">Keras</a>) is, the basic network. This was adapted in a few places for our purposes. The adapted version of PointNet is part of this repository as a script. 
+This source code was created as part of my dissertation at HafenCity University Hamburg. The collection of scripts is 
+used to examine dataset-specific properties and hyperparameters of artificial neural networks. The data preprocessing 
+is optimized for the deep learning method PointNet. 
 
-The weighted loss function has been developed on the basis of the post of B. and is a script in this repository.  
+PointNet in the variant, of the example of xxx and xxx (<a href="http://charlesrqi.com" target="_blank">Keras</a>) is,
+the basic network. This was adapted in a few places for our purposes. The adapted version of PointNet is part of this
+repository as a script. 
+
+The weighted loss function has been developed on the basis of the post of <a href="https://stackoverflow.com/questions/59520807/multi-class-weighted-loss-for-semantic-image-segmentation-in-keras-tensorflow" target="_blank">Mendi Barel</a> and is a script in this repository.  
 
 The main script is xxx. In this script the hyperparameters and investigation parameters are defined. Further, scripts for data enhancement can be found in the folder xxx. 
 ### Citation
 If you find our work useful in your research, please consider citing:
 
 	@article{Barnefske2023,
-	  title={xxxSegmentation},
+	  title={Automated segmentation and classification with artificial neural networks of objects in 3D point clouds},
 	  author={Barnefske,Eike},
 	  journal={xx},
 	  year={2023}
@@ -22,7 +28,9 @@ If you find our work useful in your research, please consider citing:
    
 ### Installation
 
-Install <a href="https://www.tensorflow.org/get_started/os_setup" target="_blank">TensorFlow</a>. You also need to install matplotlib, pandas, numpy, open3d and sklearn, pyntcloud. The code has been tested with Python 3.8.3, TensorFlow 2.3.0, CUDA 11.0 and cuDNN V10.1.243 on Windows10. 
+Install <a href="https://www.tensorflow.org/get_started/os_setup" target="_blank">TensorFlow</a>.
+You also need to install matplotlib, pandas, numpy, open3d and sklearn, pyntcloud. 
+The code has been tested with Python 3.8.3, TensorFlow 2.3.0, CUDA 11.0 and cuDNN V10.1.243 on Windows10. 
 
 Use your favourite terminal and install packages for Python:
 ```bash
@@ -39,28 +47,6 @@ Log files and network parameters will be saved to `log` folder in default. Point
 To see HELP for the training script:
 
     python train.py -h
-
-We can use TensorBoard to view the network architecture and monitor the training progress.
-
-    tensorboard --logdir log
-
-After the above training, we can evaluate the model and output some visualizations of the error cases.
-
-    python evaluate.py --visu
-
-Point clouds that are wrongly classified will be saved to `dump` folder in default. We visualize the point cloud by rendering it into three-view images.
-
-If you'd like to prepare your own data, you can refer to some helper functions in `utils/data_prep_util.py` for saving and loading HDF5 files.
-
-### Part Segmentation
-To train a model for object part segmentation, firstly download the data:
-
-    cd part_seg
-    sh download_data.sh
-
-The downloading script will download <a href="http://web.stanford.edu/~ericyi/project_page/part_annotation/index.html" target="_blank">ShapeNetPart</a> dataset (around 1.08GB) and our prepared HDF5 files (around 346MB).
-
-Then you can run `train.py` and `test.py` in the `part_seg` folder for training and testing (computing mIoU for evaluation).
 
 ### License
 Our code is released under MIT License (see LICENSE file for details).
