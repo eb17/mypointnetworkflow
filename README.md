@@ -52,7 +52,6 @@ If you find our work useful in your research, please consider citing:
 	@PhdThesis{Barnefske2023,
 	  title={Automated segmentation and classification with artificial neural networks of objects in 3D point clouds},
 	  author={Barnefske,Eike},
-	  journal={xx},
       date        = {2023},
       institution = {HafenCity University Hamburg}, 
       type        = {phdthesis},
